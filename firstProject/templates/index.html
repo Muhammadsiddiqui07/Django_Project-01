@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: white;
+            background-color: darkblue;
+            text-align: center;
+        }
+
+        h2 {
+            color: white;
+            background-color: cornflowerblue;
+            text-align: center;
+        }
+
+        textarea {
+            width: 30%;
+            height: 30vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Hello world</h1>
+    <h2>Muhammad Siddiqui</h2> -->
+    <h2>Welcome To Text Analyazer:</h2>
+
+    <form action="/analyze" method='get'>
+        <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea>
+        <input type="checkbox" name="removepunc"> Remove Punctuations<br>
+        <button type='submit'> Analyze Text</button>
+    </form>
+
+    <form action="/capital-first" method='get'>
+        <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea>
+        <input type="checkbox" name="fullcaps"> Capitalize Your TEXT<br>
+        <button type='submit'> Capitalized</button>
+    </form>
+</body>
+
+</html>
