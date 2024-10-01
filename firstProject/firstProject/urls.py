@@ -23,5 +23,5 @@ urlpatterns = [
     path('', views.index , name= 'index' ),
     path('analyze', views.analyze , name= 'analyze' ),
     path('capital-first', views.analyze , name= 'capital -first' ),
-   
+    path('remove_new_line', views.analyze , name= 'remove_new_line' ),
 ]

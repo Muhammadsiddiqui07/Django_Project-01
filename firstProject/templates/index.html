@@ -26,8 +26,8 @@
 </head>
 
 <body>
-    <!-- <h1>Hello world</h1>
-    <h2>Muhammad Siddiqui</h2> -->
+    <!-- <h1>Hello world</h1>-->
+    <h1>Muhammad Siddiqui</h1>
     <h2>Welcome To Text Analyazer:</h2>
 
     <form action="/analyze" method='get'>
@@ -40,6 +40,12 @@
         <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea>
         <input type="checkbox" name="fullcaps"> Capitalize Your TEXT<br>
         <button type='submit'> Capitalized</button>
+    </form>
+
+    <form action="/remove_new_line" method='get'></form>
+        <textarea name='text' style='margin: 0px; width: 721px; height: 93px;'></textarea>
+        <input type="checkbox" name="newLineRemover"> Remove New Line<br>
+        <button type='submit'> Submit</button>
     </form>
 </body>
 

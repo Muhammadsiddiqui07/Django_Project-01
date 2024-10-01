@@ -10,6 +10,7 @@ def analyze(request):
     djtext = request.GET.get('text' , 'defult')
     removepunc=request.GET.get('removepunc','off')
     fullcaps=request.GET.get('fullcaps','off')
+    newLineRemover=request.GET.get('newLineRemover','off')
     
     if removepunc == 'on':
         punctution = '''!()-{}[];:'"\,<>./?@#$%^&*_~'''
@@ -27,6 +28,14 @@ def analyze(request):
         params = {'Purpose' : 'Change To Uppercase' , 'analyzed_text' : analyzed }
         return render(request , 'analyze.html' , params)
     
+    elif newLineRemover == 'on':
+        analyzed = ''
+        for char in djtext:
+            if char != '\n':  
+                analyzed += char
+        
+        params = {'Purpose' : 'Remove New Line' , 'analyzed_text' : analyzed }
+        return render(request , 'analyze.html' , params)
             
             
         
